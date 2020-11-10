@@ -24,12 +24,87 @@ var server = http.createServer(function(request, response){
   if(path === '/'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`二哈`)
+    response.write(`<!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>transform</title>
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #heart {
+            display: inline-block;
+            position: absolute;
+            margin: 100px;
+            /* transition: all 1s; */
+            animation: heartkey 600ms linear infinite alternate;
+          
+        }
+        
+        @keyframes heartkey{
+            0%{
+                transform: scale(1.0);
+            }
+            100%{
+                transform: scale(1.2);
+            }
+        }
+        
+        #heart:hover {
+            transform: scale(1.2);
+        }
+        
+        .left {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 50% 0 0;
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: rotate(45deg);
+        }
+        
+        .center {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+        }
+        
+        .right {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50% 0 0 50%;
+            position: absolute;
+            top: -50%;
+            right: 50%;
+            transform: rotate(45deg);
+        }</style>
+    </head>
+    
+    
+    
+    <body>
+        <div id="heart">
+            <div class="left"></div>
+            <div class="center"></div>
+            <div class="right"></div>
+        </div>
+    
+    </body>`)
     response.end()
   } else if(path === '/x'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/css;charset=utf-8')
-    response.write(`body{color: red;}`)
+    response.write(``)
     response.end()
   } else {
     response.statusCode = 404
