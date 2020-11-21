@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body,html {
+    height: 100%;
+    min-width: 600px;
+    overflow: auto;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.button {
+    background-color:rgb(253, 201, 43);
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 20px 20px;
+    width: 230px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color:rgb(253, 187, 10);
+}
+
+.layout {
+   width: 1100px;
+   margin: 0 auto;
+}
+
+.default-font {
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+}
+
+.headline{
+    margin: 120px auto 0px auto;
+    font-size: 40px;
+}
+
+.subheading {
+    margin: 20px auto 0px auto;
+    font-style: italic;
+}
+
+.a-contact-hover:hover {
+    color:rgb(253, 201, 43);
+}
+
+p::-moz-selection{background:rgb(253, 201, 43);} 
+
+p::selection {background:rgb(253, 201, 43);} 
+
+h1::-moz-selection{background:rgb(253, 201, 43);} 
+
+h1::selection {background:rgb(253, 201, 43);} 
+
+h2::-moz-selection{background:rgb(253, 201, 43);} 
+
+h2::selection {background:rgb(253, 201, 43);} 
+
+h3::-moz-selection{background:rgb(253, 201, 43);} 
+
+h3::selection {background:rgb(253, 201, 43);} 
+
+h4::-moz-selection{background:rgb(253, 201, 43);} 
+
+h4::selection {background:rgb(253, 201, 43);} 
+
+span::-moz-selection{background:rgb(253, 201, 43);} 
+
+span::selection {background:rgb(253, 201, 43);} 
+
+@font-face {
+    font-family: 'iconfont';  /* project id 821537 */
+    src: url('https://at.alicdn.com/t/font_821537_a864fxk9cxa.eot');
+    src: url('https://at.alicdn.com/t/font_821537_a864fxk9cxa.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_821537_a864fxk9cxa.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_821537_a864fxk9cxa.ttf') format('truetype'),
+    url('https//at.alicdn.com/t/font_821537_a864fxk9cxa.svg#iconfont') format('svg');
+  }
+

@@ -1,4 +1,5 @@
 (function () {
+    console.log('index.js');
     const menu = document.getElementsByClassName('menu')[0]
     const footer = document.getElementsByTagName('footer')[0]
     const aside = document.getElementsByTagName('aside')[0]
